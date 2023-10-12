@@ -4,6 +4,8 @@
 
 Steamwebapi is a free and open-source API wrapper for interacting with the Steam Web API. It provides easy access to various Steam services such as Inventory, Profile, CS:GO Items and more without the risk of Steam blocking.
 
+For detailed information on each endpoint and their usage, please refer to the [official API documentation](https://www.steamwebapi.com/api/list).
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -26,7 +28,7 @@ go get github.com/oguzhantasimaz/steam-web-api-go
 Before making API requests, you need to obtain an API key from [steamwebapi.com](https://www.steamwebapi.com/api/list). Once you have your API key, you can initialize the wrapper and make requests to the Steam Web API.
 
 ```go
-import "github.com/oguzhantasimaz/steam-web-api-go"
+import "github.com/oguzhantasimaz/steam-web-api-go/swa"
 
 func main() {
     apiKey := "your-api-key"
@@ -70,8 +72,6 @@ The API wrapper supports the following endpoints:
     - Get Steam IDs
     - Get Steam profiles
     - Get Steam friend lists
-
-For detailed information on each endpoint and their usage, please refer to the [official API documentation](https://www.steamwebapi.com/api/list).
 
 ## Examples
 
