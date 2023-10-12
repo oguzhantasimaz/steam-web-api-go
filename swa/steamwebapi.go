@@ -15,6 +15,7 @@ type Client struct {
 	BaseURL string
 }
 
+// NewClient creates a new steam web api client with the given api key
 func NewClient(apiKey string) *Client {
 	return &Client{
 		APIKey:  apiKey,
@@ -22,14 +23,17 @@ func NewClient(apiKey string) *Client {
 	}
 }
 
+// GetAPIKey returns the api key of the client
 func (c *Client) GetAPIKey() string {
 	return c.APIKey
 }
 
+// SetAPIKey sets the api key of the client
 func (c *Client) SetAPIKey(apiKey string) {
 	c.APIKey = apiKey
 }
 
+// Get returns the response body of the given url
 func (c *Client) Get(url string, queryParameters map[string]string) ([]byte, error) {
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
