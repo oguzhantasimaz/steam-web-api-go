@@ -17,8 +17,7 @@ Steamwebapi is a free and open-source API wrapper for interacting with the Steam
 
 To use this API wrapper in your Go project, you can add it as a dependency in your `go.mod` file.
 
-```go
-require github.com/oguzhantasimaz/steamwebapi-golang v1.0.0
+```go get github.com/oguzhantasimaz/steam-web-api-go
 ```
 
 ## Usage
