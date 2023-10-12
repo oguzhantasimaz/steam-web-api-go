@@ -30,7 +30,7 @@ import "github.com/oguzhantasimaz/steam-web-api-go"
 
 func main() {
     apiKey := "your-api-key"
-    client := swa.NewClient("YOUR_API_KEY")
+    client := swa.NewClient(apiKey)
 
     // Get Item History for P250 Crimson Kimono Factory New
     
